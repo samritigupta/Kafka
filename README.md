@@ -16,5 +16,28 @@
 - Once a consumer reads a message in the queue, it disappears from that queue. 
 - The typical example of this system is an Order Processing System, where each order will be processed by one Order Processor, but Multiple Order Processors can work as well at the same time. 
 
+          sender.  ------> queue.  -----> Receiver
+          
+# Publish-Subscribe Messaging System
+- messages are persisted in a topic. 
+- Unlike point-to-point system, consumers can subscribe to one or more topic and consume all the messages in that topic. 
+- In the Publish-Subscribe system, message producers are called publishers and message consumers are called subscribers. 
 
+        sender.    ------> Message Queue.  ------> Receiver1
+                                           \
+                                            -> Receiver 2 ..n
+                                            
+# What is Kafka?
+Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. 
+Kafka is suitable for both offline and online message consumption. 
+Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. 
+Kafka is built on top of the ZooKeeper synchronization service. 
+It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
 
+Reliability − Kafka is distributed, partitioned, replicated and fault tolerance.
+Scalability − Kafka messaging system scales easily without down time..
+Durability − Kafka uses Distributed commit log which means messages persists on disk as fast as possible, hence it is durable..
+Performance − Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+
+                                           
+                                            
