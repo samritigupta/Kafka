@@ -28,16 +28,25 @@
                                             -> Receiver 2 ..n
                                             
 # What is Kafka?
-Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. 
-Kafka is suitable for both offline and online message consumption. 
-Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. 
-Kafka is built on top of the ZooKeeper synchronization service. 
-It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
+- Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. 
+- Kafka is suitable for both offline and online message consumption. 
+- Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. 
+- Kafka is built on top of the ZooKeeper synchronization service. 
+- It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
 
-Reliability − Kafka is distributed, partitioned, replicated and fault tolerance.
-Scalability − Kafka messaging system scales easily without down time..
-Durability − Kafka uses Distributed commit log which means messages persists on disk as fast as possible, hence it is durable..
-Performance − Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+- Reliability − Kafka is distributed, partitioned, replicated and fault tolerance.
+- Scalability − Kafka messaging system scales easily without down time..
+- Durability − Kafka uses Distributed commit log which means messages persists on disk as fast as possible, hence it is durable..
+- Performance − Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+
+# Use Cases
+Kafka can be used in many Use Cases. Some of them are listed below −
+
+- Metrics − Kafka is often used for operational monitoring data. This involves aggregating statistics from distributed applications to produce centralized feeds of operational data.
+- Log Aggregation Solution − Kafka can be used across an organization to collect logs from multiple services and make them available in a standard format to multiple con-sumers.
+- Stream Processing − Popular frameworks such as Storm and Spark Streaming read data from a topic, processes it, and write processed data to a new topic where it becomes available for users and applications. Kafka’s strong durability is also very useful in the context of stream processing.
+
+# 
 
                                            
                                             
