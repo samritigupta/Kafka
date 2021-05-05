@@ -8,7 +8,8 @@
 - In comparison to other messaging systems, Kafka has better throughput, built-in partitioning, replication and inherent fault-tolerance, which makes it a good fit for large-scale message processing applications.
 
 # What is a Messaging System?
-- Messaging System is responsible for transferring data from one application to another, so the applications can focus on data, but not worry about how to share it. - Distributed messaging is based on the concept of reliable message queuing. Messages are queued asynchronously between client applications and messaging system. - - Two types of messaging patterns are available:
+- Messaging System is responsible for transferring data from one application to another, so the applications can focus on data, but not worry about how to share it. - Distributed messaging is based on the concept of reliable message queuing. Messages are queued asynchronously between client applications and messaging system. 
+- Two types of messaging patterns are available:
   - one is point to point 
   - publish-subscribe (pub-sub) messaging system
 
